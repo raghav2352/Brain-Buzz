@@ -12,7 +12,7 @@
 	<artifactId>brainbuzz-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Brain Buzz</name>
-	<description>Backend service for BrainBuzz - a real-time audience interaction and polling platform</description>
+	<description>Backend service for BrainBuzz - A real-time web platform for teachers to engage students using live polls, quizzes, and anonymous feedback — during lectures, online classes, or in-person sessions.</description>
 	<url/>
 	<licenses>
 		<license/>
