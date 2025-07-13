@@ -1,4 +1,4 @@
-package dto;
+package com.app.brainbuzz.dto;
 
 import lombok.Data;
 

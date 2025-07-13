@@ -1,4 +1,6 @@
-package model;
+package com.app.brainbuzz.model;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Table(name = "options")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,6 +26,7 @@ public class Option {
     private int voteCount = 0;
 
     @ManyToOne
+    @JsonBackReference
     @JoinColumn(name = "question_id")
     private Question question;
 }

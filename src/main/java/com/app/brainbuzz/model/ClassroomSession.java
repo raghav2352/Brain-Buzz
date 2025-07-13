@@ -1,4 +1,4 @@
-package model;
+package com.app.brainbuzz.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Data
@@ -28,6 +30,7 @@ public class ClassroomSession {
     private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "session" , cascade = CascadeType.ALL , orphanRemoval = true)
+    @JsonManagedReference
     private List<Question> questions;
 
     @PrePersist
